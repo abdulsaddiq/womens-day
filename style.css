@@ -3,10 +3,8 @@ body {
     padding: 0;
     font-family: 'Nunito', sans-serif;
     background: linear-gradient(135deg, #ffd6e8 0%, #e8d9ff 50%, #bda7ff 100%);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    position: relative;
     overflow: hidden;
     color: #333;
 }
@@ -54,11 +52,13 @@ body {
 }
 
 .screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
 }
 
@@ -267,7 +267,6 @@ button:active {
 @media (max-width: 600px) {
     .card, .message-card, .final-card {
         padding: 30px;
-        margin: 20px;
     }
     
     h1 {
