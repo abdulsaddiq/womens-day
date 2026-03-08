@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Day Surprise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <div class="floating-heart" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="floating-heart" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="floating-heart" style="left: 50%; animation-delay: 4s;"></div>
+        <div class="floating-heart" style="left: 70%; animation-delay: 1s;"></div>
+        <div class="floating-heart" style="left: 90%; animation-delay: 3s;"></div>
+        <div class="floating-sparkle" style="left: 20%; animation-delay: 1.5s;"></div>
+        <div class="floating-sparkle" style="left: 40%; animation-delay: 3.5s;"></div>
+        <div class="floating-sparkle" style="left: 60%; animation-delay: 0.5s;"></div>
+        <div class="floating-sparkle" style="left: 80%; animation-delay: 2.5s;"></div>
+    </div>
+    <div id="main-screen" class="screen">
+        <div class="card">
+            <h1>💖 Women's Day Surprise 💖</h1>
+            <p class="subtitle">*A little message for someone special*</p>
+            <form id="login-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="date" id="dob" required>
+                <button type="submit" id="reveal-btn">✨ Reveal Message</button>
+            </form>
+        </div>
+    </div>
+    <div id="message-screen" class="screen hidden">
+        <div class="message-card">
+            <p id="message-text"></p>
+        </div>
+    </div>
+    <div id="final-screen" class="screen hidden">
+        <div class="final-card">
+            <h1>✨ Happy Women's Day ✨</h1>
+        </div>
+        <div id="hearts-container"></div>
+    </div>
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <p>This surprise is meant for someone special 💕</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
